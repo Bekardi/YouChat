@@ -25,13 +25,13 @@ public class Server {
 
     //userChatHistory
     private MessageHistoryManager messageHistoryManager;
+
     public Server() {
         this.clientSocket = null;
         this.serverSocket = null;
         this.clientRequestHandlerList = new ArrayList<>();
         this.messageHistoryManager = new MessageHistoryManager();
     }
-
     public static void main(String[] args) throws IOException {
         Server server = new Server();
         server.startServer();

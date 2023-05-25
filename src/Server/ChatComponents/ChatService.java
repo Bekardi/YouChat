@@ -7,13 +7,13 @@ import java.util.List;
 import Server.Server;
 
 public class ChatService implements MessageService {
-    private ClientRequestHandler client;
+  //  private ClientRequestHandler client;
     private Server server;
-    private ArrayList<ClientRequestHandler> clientRequestHandlerList;
+    //private ArrayList<ClientRequestHandler> clientRequestHandlerList;
 
-    public ChatService(ArrayList<ClientRequestHandler> clientRequestHandlerList, ClientRequestHandler client, Server server) {
-        this.clientRequestHandlerList = clientRequestHandlerList;
-        this.client = client;
+    public ChatService(Server server) {
+     //   this.clientRequestHandlerList = clientRequestHandlerList;
+     //   this.client = client;
         this.server = server;
     }
 

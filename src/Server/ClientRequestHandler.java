@@ -42,7 +42,7 @@ public class ClientRequestHandler implements Runnable {
             this.bufferedWriter = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
             this.bufferedReader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             this.clientUsername = bufferedReader.readLine();
-            this.messageService = new ChatService(Server.clientRequestHandlerList, this, server);
+            this.messageService = new ChatService(server);
 
         } catch (IOException e) {
             e.printStackTrace();
